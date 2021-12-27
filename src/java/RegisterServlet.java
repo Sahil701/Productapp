@@ -20,10 +20,11 @@ public class RegisterServlet extends HttpServlet {
        
        User user = new User(username, password, mobile);
        boolean status = UserDAO.registerUser(user);
-       if(status)
-         out.print("<h1>Registration Success</h1>");
+       if(status){
+         response.sendRedirect("login.html");
+       }
        else
-          out.print("<h1>Registration Failed</h1>"); 
+         response.sendRedirect("register.html");
     }
 
 }
