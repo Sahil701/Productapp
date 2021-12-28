@@ -19,8 +19,8 @@ public class ProductDashboard extends HttpServlet {
          out.print("<html>");
          out.print("<body>");
          out.print("<h3>Welcome "+username+"</h3>");
-         out.print("<a href='#'>Add-Product</a><br>");
-         out.print("<a href='#'>Product List</a><br>");
+         out.print("<a href='./AddProductServlet'>Add-Product</a><br>");
+         out.print("<a href='./ProductListServlet'>Product List</a><br>");
          out.print("<a href='./LogoutServlet'>Logout</a>");
          out.print("</body>");
          out.print("</html>");
