@@ -36,8 +36,8 @@ public class ProductListServlet extends HttpServlet {
              out.print("<td>"+p.getName()+"</td>");
              out.print("<td>"+p.getPrice()+"</td>");
              out.print("<td>"+p.getDescription()+"</td>");
-             out.print("<td><button>Edit</button></td>");
-             out.print("<td><button>Delete</button></td>");
+             out.print("<td><a href='./UpdateProductServlet?id="+p.getId()+"'><button>Edit</button></a></td>");
+             out.print("<td><a href='./DeleteProductServlet?id="+p.getId()+"'><button>Delete</button></a></td>");
              out.print("</tr>");
             
             }
